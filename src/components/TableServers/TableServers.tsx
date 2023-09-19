@@ -12,6 +12,9 @@ export const TableServers = ({ servers }: { servers: IServers[] }) => {
   const handleChange = (currentId: string | number, newValue: boolean) => {
     dispatch(setCheckedServers({ currentId, newValue }));
   };
+  if (servers.length === 0) {
+    return <p >По данному запросу записи не найдены</p>
+  }
 
   return (
     <Table striped bordered hover>

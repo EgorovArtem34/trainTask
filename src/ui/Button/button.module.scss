@@ -4,7 +4,7 @@
 }
 
 .transparent,
-.toggleMenu {
+.filter {
   display: flex;
   align-items: center;
   background: transparent;
@@ -17,6 +17,23 @@
   letter-spacing: 0.36px;
 }
 
-.toggleMenu {
-  
+.filter {
+  position: relative;
+}
+
+.submit,
+.reset {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5%;
+}
+
+.submit {
+  background-color: #1F75FE;
+  color: white;
+}
+
+.reset {
+  background-color: #D3D3D3;
+  color: var(--dark-blue, #222342);
 }

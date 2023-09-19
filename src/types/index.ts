@@ -21,4 +21,10 @@ export interface IPagination {
   currentPage: number;
   totalPages: number;
   onPageChange: (pageNumber: number) => void;
-};
+}
+
+export interface IOptions {
+  value: string;
+  label: string;
+  color?: string;
+}

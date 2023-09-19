@@ -1,0 +1,26 @@
+.filter {
+  position: relative;
+}
+
+.form {
+  position: absolute;
+  padding: 10px;
+  z-index: 10;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: aliceblue;
+  border-radius: 5%;
+}
+
+.formTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}

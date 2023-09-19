@@ -21,7 +21,7 @@ export const Aside = () => {
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <Button
-              variant="toggleMenu"
+              variant="transparent"
               onClick={toggleDropdown}
               aria-label="открыть меню CMDB"
             >

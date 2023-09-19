@@ -2,3 +2,18 @@
   width: 85%;
   padding: 10px;
 }
+
+.interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.searchAndFilter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
