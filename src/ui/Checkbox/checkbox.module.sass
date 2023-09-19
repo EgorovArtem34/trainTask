@@ -1,0 +1,33 @@
+.form
+  display: flex
+  align-items: center
+  margin-right: 5px
+
+.input
+  cursor: pointer
+  opacity: 0
+  position: absolute
+  &:checked
+    &+.checkboxLabel::before
+      content: ''
+      display: flex
+      justify-content: center
+      align-items: center
+      background: url('../../assets/icons/checked.svg')
+      background-size: cover
+
+.checkboxLabel
+  display: flex
+  cursor: pointer
+  &:hover
+    &::before
+     background: var(--bg-blue, #4198C5)
+  &::before
+    content: ''
+    display: flex
+    width: 18px
+    height: 18px
+    border: 1px solid var(--bg-gray-light, #d0cfcf)
+    border-radius: 0.25em
+    background-size: 18px 18px
+    margin-right: 0.7em
