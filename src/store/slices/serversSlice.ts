@@ -3,6 +3,8 @@ import { serversData } from "../../utils/constants";
 
 const initialState = {
   servers: serversData,
+  filteredAndSearchedServers: serversData,
+  serversPerPage: 10,
 };
 
 const serversSlice = createSlice({
