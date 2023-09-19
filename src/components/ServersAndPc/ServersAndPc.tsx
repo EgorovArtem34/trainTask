@@ -8,6 +8,7 @@ import { Pagination } from "../Pagination/Pagination";
 import { createPageNumbers } from "../../utils/utils";
 import { SearchInput } from "../SearchInput/SearchInput";
 import { FiltersServers } from "../FiltersServers/FiltersServers";
+import { SelectPageCount } from "../SelectPageCount/SelectPageCound";
 
 export const ServersAndPc = () => {
   const { filteredAndSearchedServers, serversPerPage } = useAppSelector(
@@ -73,11 +74,14 @@ export const ServersAndPc = () => {
         </div>
       </div>
       <TableServers servers={currentServers} />
-      <Pagination
-        currentPage={currentPage}
-        totalPages={pageNumbers.length}
-        onPageChange={handlePageChange}
-      />
+      <div className={styles.paginationAndPageCount}>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={pageNumbers.length}
+          onPageChange={handlePageChange}
+        />
+        <SelectPageCount />
+      </div>
     </main>
   );
 };

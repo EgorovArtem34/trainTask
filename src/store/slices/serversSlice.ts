@@ -41,6 +41,9 @@ const serversSlice = createSlice({
     setSearchQuery: (state, { payload }: PayloadAction<string>) => {
       state.searchQuery = payload;
     },
+    setServersPerPage: (state, {payload}: PayloadAction<number>) => {
+      state.serversPerPage = payload;
+    },
     setSelectedFilters: (
       state,
       { payload }: PayloadAction<ISelectedFilters>
@@ -73,5 +76,6 @@ export const {
   setCheckedServers,
   setSearchQuery,
   setSelectedFilters,
+  setServersPerPage,
 } = serversSlice.actions;
 export default serversSlice.reducer;
