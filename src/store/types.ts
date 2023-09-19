@@ -17,3 +17,7 @@ export interface iServerSliceState {
     searchQuery: string;
     selectedFilters: ISelectedFilters;
 }
+
+export interface IQueryParamsProps {
+  queryParams: URLSearchParams;
+}

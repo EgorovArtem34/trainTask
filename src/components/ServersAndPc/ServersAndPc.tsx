@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+import { useLocation } from "react-router-dom";
 import { TableServers } from "../TableServers/TableServers";
 import styles from "./serversAndPc.module.scss";
 import { useAppSelector } from "../../hooks/hooks";
@@ -20,6 +21,11 @@ export const ServersAndPc = () => {
     currentPage * serversPerPage
   );
   const [indexOfFirstPost, setIndexOfFirstPost] = useState(1);
+  const location = useLocation();
+  const queryParams = useMemo(
+    () => new URLSearchParams(location.search),
+    [location.search]
+  );
 
   useEffect(() => {
     if (currentServers.length === 0) {
@@ -62,8 +68,8 @@ export const ServersAndPc = () => {
           {indexOfLastPost} из {filteredAndSearchedServers.length}
         </p>
         <div className={styles.searchAndFilter}>
-          <SearchInput />
-          <FiltersServers />
+          <SearchInput queryParams={queryParams} />
+          <FiltersServers queryParams={queryParams} />
         </div>
       </div>
       <TableServers servers={currentServers} />
