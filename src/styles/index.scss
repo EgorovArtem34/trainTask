@@ -1,0 +1,23 @@
+:root {
+  --bg-dark: #19172f;
+  --white: #fff;
+  --blue: #40A5F3;
+  --dark-blue: #222342;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-dark, #19172f);
+}
+
+#root {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--white, #fff);
+}
