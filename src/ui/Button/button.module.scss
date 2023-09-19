@@ -1,0 +1,22 @@
+.button {
+  cursor: pointer;
+  // transition: all 0.3s ease;
+}
+
+.transparent,
+.toggleMenu {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: var(--dark-blue, #222342);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.36px;
+}
+
+.toggleMenu {
+  
+}

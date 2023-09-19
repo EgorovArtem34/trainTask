@@ -1,7 +1,7 @@
 :root {
   --bg-dark: #19172f;
   --white: #fff;
-  --blue: #40A5F3;
+  --gray:	#F5F5F5;
   --dark-blue: #222342;
 }
 
@@ -12,12 +12,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  background-color: var(--bg-dark, #19172f);
-}
-
 #root {
-  max-width: 1440px;
+  display: flex;
+  max-width: 1200px;
+  min-height: 100vh;
+  height: 100%;
   margin: 0 auto;
-  color: var(--white, #fff);
+  padding: 20px;
+  color: var(--dark-blue, #222342);
 }
