@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import serversSlice from "./slices/serversSlice";
 
 const store = configureStore({
   reducer: {
+    serversSlice,
   },
 });
 
